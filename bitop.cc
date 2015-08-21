@@ -2,6 +2,8 @@
 @author gogdizzy
 @date   2015-08-20
 @desciption 收集到的一些位运算代码片段
+@resource
+	http://graphics.stanford.edu/~seander/bithacks.html
 */
 
 // 返回大于等于x的最小的2次幂，0返回0，负数返回0
