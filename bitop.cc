@@ -22,3 +22,14 @@ int32_t nextpow2( int32_t x ) {
 int32_t lowbit( int32_t x ) {
 	return x & -x;
 }
+
+// 求绝对值
+int32_t abs( int32_t x ) {
+	return ( x ^ ( x >> 31 ) ) - ( x >> 31 );
+}
+
+float abs( float f ) {
+	int x = *(int*)&f;
+	x &= 0x7fffffff;
+	return *(float*)&x;
+}
