@@ -4,6 +4,7 @@
 @desciption 收集到的一些位运算代码片段
 @resource
 	http://graphics.stanford.edu/~seander/bithacks.html
+	http://blog.jobbole.com/70993/ (原文：http://stackoverflow.com/questions/746171/best-algorithm-for-bit-reversal-from-msb-lsb-to-lsb-msb-in-c/746203#746203)
 */
 
 // 返回大于等于x的最小的2次幂，0返回0，负数返回0
@@ -33,3 +34,6 @@ float abs( float f ) {
 	x &= 0x7fffffff;
 	return *(float*)&x;
 }
+
+// 位反转，这个在fft中经常用到
+// http://blog.jobbole.com/70993/
